@@ -1,0 +1,56 @@
+@import "../../styles/_variables";
+
+.faqWrapper {
+    background-color: $primaryColor;
+    padding: $verticalPaddingLg;
+    .title {
+        text-align: center;
+        padding-bottom: 3rem;
+        color: $white;
+        font-weight: 700;
+        font-size: $headingSize;
+        @media #{$sm} {
+            font-family: "Gotham";
+            font-style: normal;
+            font-weight: 700;
+            font-size: $smHeadingSize;
+        }
+    }
+    .faqRow {
+        color: $white;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+        place-items: center;
+        padding: $horizontalPaddingLg;
+        @media #{$sm} {
+            display: block;
+        }
+        .faqCol {
+            width: 80%;
+            margin-bottom: 60px;
+            @media #{$sm} {
+                width: 100%;
+            }
+            h1 {
+                font-size: $textSizeLg;
+                margin-bottom: 28px;
+                @media #{$sm} {
+                    font-family: "Gotham";
+                    font-style: normal;
+                    font-weight: 700;
+                    text-align: center;
+                    font-size: $smHeadingSizeLg;
+                }
+            }
+            p {
+                font-size: $textSizeSm;
+                @media #{$sm} {
+                    font-family: "Poppins";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: $smTextSize;
+                }
+            }
+        }
+    }
+}

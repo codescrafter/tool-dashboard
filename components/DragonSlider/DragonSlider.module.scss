@@ -1,0 +1,107 @@
+@import "../../styles/_variables";
+
+.priceListsWrapper {
+    background-color: $primaryColor;
+    padding: $verticalPaddingLg;
+    .titleBar {
+        text-align: center;
+        padding-bottom: 50px;
+        h1 {
+            color: $secondaryColor;
+            font-size: $headingSize;
+        }
+        p {
+            font-size: $textSize;
+            color: $lightGray;
+        }
+    }
+    .slider {
+        .recommended {
+            display: flex;
+            justify-content: center;
+            p {
+                text-align: center;
+                padding: 8px;
+                background-color: $red;
+                margin: 0;
+                width: 40%;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+                font-size: $textSizeSm;
+                color: $white;
+                font-weight: 700;
+            }
+        }
+        .slide {
+            color: $white;
+            background-color: $footerColor;
+            min-height: 1215px;
+            display: flex !important;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 60px;
+
+            header {
+                background-color: $cgBlue;
+                height: 85px;
+                font-size: $textSizeLg;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .priceTitle {
+                padding: 2rem 0;
+                text-align: center;
+                font-size: 48px;
+                @media #{$lg,$xl} {
+                    font-size: $textSizeLg;
+                }
+            }
+            .listWrapper {
+                list-style-type: none;
+                li {
+                    font-size: $textSizeSm;
+                    line-height: 42px;
+                    &::before {
+                        content: "✓";
+                        font-size: $textNormal;
+                        margin-right: 1rem;
+                        color: $secondaryColor;
+                    }
+                }
+            }
+            footer {
+                background-color: $secondaryColor;
+                height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                p {
+                    display: inline-block;
+                    margin: 0;
+                    background-color: $cgBlue;
+                    height: 100%;
+                    width: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+        .activeSlide {
+            background-color: $secondaryColor;
+            margin-top: 0;
+            @media #{$sm} {
+                margin-left: 2rem;
+                margin-right: 2rem;
+            }
+            footer {
+                background-color: $footerColor;
+            }
+        }
+        .otherSlides {
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+    }
+}

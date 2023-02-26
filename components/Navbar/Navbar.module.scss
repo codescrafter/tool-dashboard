@@ -1,0 +1,110 @@
+@import "../../styles/_variables";
+
+.navbarWrapper {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem 5px;
+    background-color: $primaryColor;
+    width: 100%;
+    @media #{$sm} {
+      padding: 0 0.5rem;
+    }
+    .imageWrap {
+      width: 288px;
+      height: 138px;
+      left: 13px;
+      top: 25px;
+      @media #{$sm} {
+        width: 110px;
+        height: 75px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .text {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      @media #{$sm} {
+        display: none;
+      }
+      .buyText {
+        text-align: center;
+        .bySub {
+          color: $white;
+          font-family: Poppins;
+          font-size: 21px;
+          font-weight: 600;
+          line-height: 33px;
+          letter-spacing: 0em;
+          text-align: center;
+        }
+      }
+      .buttonWrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 192px;
+        height: 58px;
+text-align: center;
+        background: $cgBlue;
+        border-radius: 70px;
+        .area {
+          border: none;
+          width: 139px;
+          height: 32px;
+          left: 1495px;
+          top: 79px;
+          background: $cgBlue;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+
+          text-align: center;
+        }
+        .login {
+          width: 37px;
+          height: 37px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: $vectorbackground;
+          border-radius: 40px;
+          .vector {
+            color: $vector;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+      .sign {
+        .signup {
+          width: 192px;
+          height: 58px;
+          left: 1687px;
+          top: 66px;
+
+          background: $secondaryColor;
+          border-radius: 70px;
+        }
+      }
+    }
+    .menuWrapper {
+      display: none;
+      @media #{$sm} {
+        display: block;
+
+        color: white;
+        font-size: 32px;
+      }
+    }
+  }
+}

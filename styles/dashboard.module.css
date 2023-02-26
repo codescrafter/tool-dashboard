@@ -1,0 +1,67 @@
+.pageWrapper {
+  display: flex;
+}
+.leftNav {
+  min-width: 240px;
+  height: 100vh;
+  background-color: #1a1a1a;
+}
+.contentWrapper {
+  flex: 1;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.imgWrapper {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+.imgWrapper img {
+  max-width: 100%;
+  cursor: pointer;
+}
+.axtiveResources {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #1a211d;
+}
+.resourcesList {
+  display: flex;
+  flex-wrap: wrap;
+}
+.resourceWraper {
+  margin: 20px;
+}
+.navLogoCont {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.tabList {
+  margin-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.tabList div {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  width: 100%;
+  text-align: center;
+  background-color: #1a1a1a;
+  color: white;
+}
+.navBtnInactive {
+  background-color: #1a1a1a;
+  color: white;
+}
+.navBtnActive {
+  background-color: #078a93;
+  color: #262626;
+}

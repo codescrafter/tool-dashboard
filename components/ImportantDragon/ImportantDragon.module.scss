@@ -1,0 +1,93 @@
+@import "../../styles/_variables";
+
+.importantDragonWrapper {
+    background-color: $primaryColor;
+    padding-bottom: 2rem;
+    @media #{$sm} {
+        margin-top: -17%;
+    }
+    .dragonWrap {
+        background-color: $primaryColor;
+        padding-bottom: 2rem;
+        border-bottom: 2px solid $secondaryColor;
+        .importantDragon {
+            text-align: center;
+            h1 {
+                color: $white;
+                font-family: "Gotham";
+                font-style: normal;
+                font-weight: 700;
+                font-size: $headingSize;
+                @media #{$sm} {
+                    font-family: "Gotham";
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: $smHeadingSize;
+                }
+            }
+            p {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 400;
+                font-size: $smHeadingSize;
+                color: $white;
+                width: 100%;
+                padding: 0 18%;
+                @media #{$sm} {
+                    font-family: "Poppins";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: $smTextSize;
+                }
+            }
+        }
+        .important {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            .wraper {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 700;
+                font-size: $textSize;
+                width: 248px;
+                height: 62px;
+                background: $secondaryColor;
+                border-radius: 6px;
+                @media #{$sm} {
+                    width: 77px;
+                    height: 19px;
+                    font-family: "Poppins";
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: $smTextSize;
+                }
+            }
+        }
+        .payment {
+            padding: 1px;
+            position: relative;
+            .paymentNeeded {
+                p {
+                    font-family: "Poppins";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: $textSizeSm;
+
+                    text-align: center;
+                    right: 527px;
+                    color: $lightGray;
+                    position: absolute;
+                    @media #{$sm} {
+                        font-family: "Poppins";
+                        font-style: normal;
+                        font-weight: 400;
+
+                        font-size: $textSizeSm;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+@import "./_variables";
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+        Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        color-scheme: dark;
+    }
+    body {
+        color: white;
+        background: black;
+    }
+}
+
+.slick-next {
+    right: 6px !important;
+    z-index: 10;
+    &::before {
+        color: $secondaryColor !important;
+    }
+}
+.slick-prev {
+    left: 6px !important;
+    z-index: 10;
+    &::before {
+        color: $secondaryColor !important;
+    }
+}

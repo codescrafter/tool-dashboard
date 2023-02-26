@@ -1,0 +1,118 @@
+.mainDisplay {
+    position: relative;
+    background-color:#fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+width: 400px;
+padding: 20px;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+}
+
+.loginWrapper {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    width: 350px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+}
+
+.loginHeading {
+    color: rgb(57, 56, 56);;
+    font-size: 30px;
+    font-size: 40px;
+margin-bottom: 20px;
+}
+
+.loginInput {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.274);
+    border-radius: 2px;
+    color: rgba(0, 0, 0, .8);
+    width: 260px;
+    display: block;
+}
+
+.loginInput::placeholder {
+    opacity: .7;
+}
+
+.loginInput:focus {
+    outline: none;
+}
+
+.forgetPass {
+    margin-left: 7px;
+    color: hsla(120, 100%, 25%, 0.486);
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 0;
+
+}
+
+.LoginBtn {
+    background: #0a66c2;
+    margin: 0px auto 0px auto;
+    padding: 13px 10px;
+    border: none;
+    width: 95%;
+
+    cursor: pointer;
+    border-radius: 40px;
+    transition: background-image, .5s;
+}
+
+.LoginBtn:hover {
+    transform: scale(1.05);
+}
+.pageWrapper{
+    min-height: 100vh;
+    background: rgb(3,133,155);
+    background: linear-gradient(180deg, rgb(7, 152, 178) 0%, rgba(0,132,158,1) 35%, rgba(2,129,163,1) 100%);
+    display: flex;
+    flex-direction: column;
+}
+.logoWrapper{
+    display: flex;
+    justify-content: center;
+    position: relative;
+margin-top: 100px;
+}
+.loginBtnWrapper{
+    margin-top: 10px;
+}
+.inputWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.inputWrapper label{
+    height: 46px;
+    display: flex;
+    align-items: center;
+}
+.unregistered{
+    display: flex;
+    margin-top: 20px;
+}
+.inputWrapper{
+    margin-bottom: 15px;
+}
+.inputWrapper p{
+    margin-bottom: 0px;
+    text-align: left;
+    color: red;
+    display: block;
+   
+}

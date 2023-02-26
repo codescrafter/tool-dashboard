@@ -1,0 +1,142 @@
+@import "../../styles/_variables";
+
+.herosection {
+    background-color: $primaryColor;
+    padding-top: 6rem;
+    padding-bottom: 16rem;
+    @media #{$sm} {
+        padding-bottom: 1rem;
+        padding-top: 4rem;
+    }
+    .herosectionWrap {
+        @media #{$sm} {
+            flex-direction: column-reverse;
+        }
+        .heading {
+            width: 100%;
+            @media #{$sm} {
+            }
+
+            .dragon {
+                @media #{$sm} {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-top: 27px;
+                }
+                h1 {
+                    color: $white;
+                    width: 798px;
+                    height: 216px;
+
+                    font-family: "Gotham";
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: $headingSize;
+
+                    .best {
+                        color: $secondaryColor;
+                    }
+                    @media #{$sm} {
+                        width: 297px;
+                        height: 19px;
+                        font-family: "Gotham";
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 26px;
+                        text-align: center;
+                    }
+                }
+            }
+            .dragonDetail {
+                margin-top: 0;
+                p {
+                    width: 100%;
+                    height: 137px;
+                    color: $white;
+                    font-family: "Gotham";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: $textSizeSm;
+                }
+                @media #{$sm} {
+                    display: none;
+                }
+            }
+            .signUp {
+                @media #{$sm} {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-top: 109px;
+                    padding-bottom: 12px;
+                }
+                .signupDragon {
+                    width: 284px;
+                    height: 68px;
+                    font-family: "Gotham";
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: $textSize;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $cgBlue;
+                    color: $vector;
+                    @media #{$sm} {
+                        font-family: "Gotham";
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 13px;
+                        line-height: 12px;
+                        height: 27px;
+                        width: 92px;
+                    }
+                }
+            }
+        }
+        .dragonWrap {
+            @media #{$sm} {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .imageBackground {
+                width: 420px;
+                height: 420px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $secondaryColor;
+                border-radius: 50%;
+                position: relative;
+                @media #{$sm} {
+                    width: 212px;
+                    height: 212px;
+                }
+
+                .imageWrapper {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 470px;
+                    position: absolute;
+                    left: -20px;
+                    bottom: -2px;
+                    @media #{$sm} {
+                        width: 198px;
+                        height: 232px;
+                    }
+
+                    .img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+}

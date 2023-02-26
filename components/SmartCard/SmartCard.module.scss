@@ -1,0 +1,92 @@
+@import "../../styles/_variables";
+
+.smartCardWrapper {
+    width: 415px;
+    height: 84px;
+    border-radius: 8px;
+    @media #{$xl} {
+        width: 315px;
+        height: 60px;
+    }
+    @media #{$lg} {
+        width: 280px;
+        height: 60px;
+    }
+    @media #{$sm, $md} {
+        width: 200px;
+        height: 40px;
+    }
+    .contentWrapper {
+        display: flex;
+        align-items: center;
+        .imageBox {
+            border-bottom-left-radius: 8px;
+            border-top-left-radius: 8px;
+            background-color: $azure;
+            width: 100px;
+            height: 84px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media #{$lg, $xl} {
+                height: 60px;
+            }
+            @media #{$sm, $md} {
+                height: 40px;
+                border-bottom-left-radius: 2px;
+                border-top-left-radius: 2px;
+            }
+            .imageWrapper {
+                width: 75px;
+                height: 60px;
+                @media #{$lg, $xl} {
+                    width: 45px;
+                    height: 40px;
+                }
+                @media #{$sm, $md} {
+                    width: 26px;
+                    height: 20px;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+        .content {
+            border-bottom-right-radius: 8px;
+            border-top-right-radius: 8px;
+            width: calc(415px - 75px);
+            background-color: $erieBlack;
+            color: $white;
+            text-align: center;
+            font-size: $textSize;
+            height: 84px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media #{$lg, $xl} {
+                height: 60px;
+            }
+            @media #{$sm, $md} {
+                height: 40px;
+                font-size: $smTextLg;
+                border-bottom-right-radius: 2px;
+                border-top-right-radius: 2px;
+            }
+            p {
+                margin: 0;
+            }
+        }
+    }
+    .tooltipContentStyle {
+        background-color: $white;
+        color: $erieBlack;
+        width: 70%;
+        @media #{$sm, $md} {
+            width: 260px;
+        }
+    }
+}

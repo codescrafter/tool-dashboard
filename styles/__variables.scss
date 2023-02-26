@@ -1,0 +1,45 @@
+// Color variables
+$primaryColor: #272727;
+$secondaryColor: #078a93;
+$prussianBlue: #002e48;
+$azure: #0085ff;
+$cgBlue: #0a7da1;
+$footerColor: #5959598a;
+$white: #ffffff;
+$red: #ff0000;
+$vector: #f5f5f5;
+$vectorbackground: #252525;
+$filterBlurl: rgba(255, 255, 255, 0.14);
+$footer: #595959;
+$paymentcolor: #b3b3b3;
+$erieBlack: #1d1d1d;
+$lightGray: #a3a3a3ed;
+
+// Responsive variables
+
+$xxl: "(min-width: 1600px)";
+$xl: "only screen and (min-width: 1200px) and (max-width: 1599px)";
+$lg: "only screen and (min-width: 992px) and (max-width: 1199px)";
+$md: "only screen and (min-width: 768px) and (max-width: 991px)";
+$sm: "(max-width: 767px)";
+$lsm: "only screen and (min-width: 576px) and (max-width: 767px)";
+$xsm: "(max-width: 575px)";
+$tiny: "(max-width: 399px)";
+
+// Padding variables
+$horizontalPaddingLg: 0 50px;
+$verticalPaddingLg: 100px 0;
+
+// Font sizes
+$headingSize: 70px;
+$textSizeLg: 40px;
+$textSize: 28px;
+$textSizeSm: 20px;
+$textNormal: 16px;
+
+// Font sizes small
+
+$smHeadingSize: 24px;
+$smTextSize: 10px;
+$smTextLg: 18px;
+$smHeadingSizeLg: 27px;
